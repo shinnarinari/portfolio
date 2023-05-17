@@ -1,0 +1,11 @@
+@charset 'utf-8';
+
+* {background-color: aqua;}
+.box4-2 .activ_img ul{
+    display: flex;
+}
+
+.box4-2 .activ_img ul li {
+    margin-left: 30px;
+}
+

@@ -1,0 +1,437 @@
+@charset 'utf-8';
+
+* {margin: 0;
+    padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none;
+color: #4C4A4A;}
+img {border: none;
+    vertical-align: bottom;}
+body {
+    font-family: 'inter';
+    color: #4C4A4A;
+}
+
+/* 로고설정 */
+
+header {
+    width: 100%;
+}
+
+.boxA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+
+.logo {
+    width: 400px;
+    height: 180px;
+    background-image: url(../img/logo.png);
+    text-indent: -9999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* 메뉴설정 */
+
+.gnb {}
+.gnb ul {
+    display: flex;
+    justify-content: center;
+    background-color: #2F4072;
+}
+.gnb ul li {
+
+}
+.gnb ul li a {
+    display: block;
+    width: 200px;
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.gnb ul li a:hover {background-color: #5C82EE;}
+
+
+/* hero 설정 */
+
+.hero {
+    
+}
+
+/* open설정 (하단개관일정보) */
+
+
+.open {
+    width: 100%;
+    height: 100px;
+    border-top: 3px solid #D9D9D9;
+    border-bottom: 3px solid #D9D9D9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.today p {
+    color: #08277E;
+    font-size: 20px;
+    text-align: center;
+}
+
+.today b {
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+}
+
+.today span { color: #5C82EE;}
+
+.open .time {}
+
+.open .time p {
+    font-size: 18px;
+    color: #4C4A4A;
+}
+
+.open .time b {
+    color: #08277E;
+}
+.open .group a{
+    width: 280px;
+    background-color: #F7D40F;
+    padding: 25px 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* info 설정 소개문구 */
+
+.box1 {
+    width: 100%;
+    height: 520px;
+    background-image: url(../img/bg001.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.box1-1 {
+    display: flex;
+    justify-content: center;
+}
+
+.info {
+    width: 680px;
+    height: 210px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info p {
+    font-size: 18px;
+    color: #08277E;
+    text-align: center;
+}
+
+.info p em {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    color: #071F64;
+}
+
+/* 내부,외부 이미지 설정 */
+
+.box2 {
+    background: #5C82EE;
+    width: 100%;
+}
+
+/* notice 설정 공지사항 */
+
+.box3 {
+    background-color: #EFF3FF;
+    width: 100%;
+    height: 520px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.notice {
+    display: flex;
+    justify-content: center;
+}
+.notice ul {
+    background-color: #fff;
+    width: 1100px;
+    height: 290px;
+}
+.notice li {
+    margin-top: 10px;
+    padding: 8px 0;
+}
+.notice li:hover{background-color: #EFF3FF;}
+.notice li a {
+    font-size: 20px;
+}
+.notice li a span {
+    display: inline-block;
+    padding: 3px 10px;
+}
+.notice li:nth-child(1) a span {background-color: #5C82EE;
+                                color: #fff;}
+.notice li:nth-child(2) a span {background-color: #5C82EE;
+                                color: #fff;}
+.notice li:nth-child(3) a span {background-color: #F7D40F;
+                                color: #473D06;}
+.notice li:nth-child(4) a span {background-color: #F7D40F;
+                                color: #473D06;}
+
+.notice li a em {
+    font-style: normal;
+    float: right;
+}
+
+/* activ설정 체험활동 */
+
+
+.box4 {
+    width: 100%;
+    height: 720px;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+}
+
+.box4-2 {
+    padding-bottom: 50px;
+}
+
+.activ_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activ_img ul {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.activ_img li {
+    padding-right: 35px;
+}
+.activ_img img {
+    width: 150px;
+    height: 160px;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.activ_img .square {
+    width: 170px;
+    height: 180px;
+    background-color: #EFF3FF;
+}
+
+
+.activ_list {}
+.activ_list ul {
+    display: flex;
+    background-color: #EFF3FF;
+}
+.activ_list li {}
+.activ_list em {
+    font-style: normal;
+    color: #5C82EE;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* event 행사특별전시  */
+
+.box5 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/bg003.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.event_top {}
+.event_top .poster {}
+.event_top .poster a {}
+.event_top .poster img {
+    width: 200px;
+    height: 320px;
+}
+
+.event_bottom {}
+.event_bottom .poster {}
+.event_bottom .poster a {}
+.event_bottom .poster img {
+    width: 200px;
+    height: 320px;
+}
+
+/* 철도질의문답 */
+
+.box6 {
+    height: 100vh;
+    background-image: url(../img/bg004.png);
+}
+.box6-2 {
+    width: 950px;
+}
+.blink {
+}
+.blink .qna_title {
+    background-color: #D9D9D9;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+}
+.blink .qna_title i {
+    float: right;
+}
+.blink .qna_content {
+    background-color: #A9BCFF;
+    display: none;
+}
+
+/* a가 벗어남 */
+
+/* .blink .qna_content a {
+    display: block;
+    width: 100px;
+    height: 30px;
+    background-color: #EBF57D;
+    border-radius: 20px 0 20px 0;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+/* qna 공통간격 */
+.blink .qna_title, .blink .qna_content {
+    padding: 10px 90px;
+    margin-bottom: 7px;
+}
+
+
+/* 온라인교육영상 */
+
+.box7 {
+    width: 100%;
+    height: 100vh;
+    background-color: #5C82EE;
+}
+
+.train_viedo_btn iframe {
+    width: 250px;
+    height: 135px;
+}
+
+/* 영상 제목문구*/
+
+.box7-3 {}
+.viedo_info {}
+.viedo_info ul{
+    background-color: #fff;
+}
+.viedo_info ul li {
+    font-size: 24px;
+    font-weight: bold;
+    color: #071F64;
+}
+
+/* map 오시는길 */
+
+.box8 {
+    width: 100%;
+    height: 720px;
+}
+
+
+
+/* footer */
+
+footer {
+    background-color: #D9D9D9;
+}
+.footer_info {
+    display: flex;
+}
+.sub_logo {
+    width: 400px;
+    height: 180px;
+    background-image: url(../img/logo.png);
+    text-indent: -9999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.sns {
+}
+.sns ul {
+    display: flex;
+}
+.sns ul li {
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sns ul li:nth-child(1) a {
+    color: #ff0000;
+}
+.sns ul li:nth-child(2) a {
+    color: #1877f2;
+}
+
+.sns ul li {
+    font-size: 36px;
+}
+
+
+
+/* title정리 */
+
+.box3-1, .box4-1, .box5-1, .box6-1, .box7-1 , .box8-1 {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title{
+    width: 250px;
+    height: 80px;
+    background-color: #5C82EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 0 50px 0;
+}
+
+.title h2{
+    color: #fff;
+    font-size: 26px;
+}
+
+
