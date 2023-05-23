@@ -30,9 +30,7 @@
         </nav>
     </div>
     <div class="boxC">
-        <div class="hero">
-            <img src="img/hero.png" alt="">
-        </div>
+        
     </div>
     <div class="boxD">
         <div class="open">
@@ -68,42 +66,40 @@
         <div class="box2-1">
             <div class="tab">
                 <ul>
-                    <li>본관전시</li>
+                    <li class="on">본관전시</li>
                     <li>야외전시</li>
                 </ul>
             </div>
         </div>
         <div class="box2-2">
             <div class="main_art">
-                <div class="museum_ins">
-                    <div class="inside"><img src="img/in001.png" alt=""></div>
-                    <div class="inside"><img src="img/in002.png" alt=""></div>
-                    <div class="inside"><img src="img/in003.png" alt=""></div>
-                    <div class="inside"><img src="img/in004.png" alt=""></div>
-                    <div class="inside"><img src="img/in005.png" alt=""></div>
-                </div>
-                <div class="museum_outs">
-                    <div class="outside"><img src="img/out001.png" alt=""></div>
-                    <div class="outside"><img src="img/out002.png" alt=""></div>
-                    <div class="outside"><img src="img/out003.png" alt=""></div>
-                    <div class="outside"><img src="img/out004.png" alt=""></div>
-                    <div class="outside"><img src="img/out005.png" alt=""></div>
-                </div>
-            </div>
-            <div class="arrow_nav">
-                <div class="arrow_icon">
-                    <i class="fa fa-caret-left" aria-hidden="true"></i>
-                    <i class="fa fa-caret-right" aria-hidden="true"></i>
-                </div>
-                <div class="under_art">
-                    <div class="inside_btn">
+                <div class="inBox">
+                    <div class="museum_ins big">
+                        <div class="inside"><img src="img/in001.png" alt=""></div>
+                        <div class="inside"><img src="img/in002.png" alt=""></div>
+                        <div class="inside"><img src="img/in003.png" alt=""></div>
+                        <div class="inside"><img src="img/in004.png" alt=""></div>
+                        <div class="inside"><img src="img/in005.png" alt=""></div>
+                    </div>
+                    <div class="inside_btn thumb">
                         <div><img src="img/in001.png" alt=""></div>
                         <div><img src="img/in002.png" alt=""></div>
                         <div><img src="img/in003.png" alt=""></div>
                         <div><img src="img/in004.png" alt=""></div>
                         <div><img src="img/in005.png" alt=""></div>
                     </div>
-                    <div class="outide_btn">
+                </div>
+
+
+                <div class="outBox">
+                    <div class="museum_outs big">
+                        <div class="outside"><img src="img/out001.png" alt=""></div>
+                        <div class="outside"><img src="img/out002.png" alt=""></div>
+                        <div class="outside"><img src="img/out003.png" alt=""></div>
+                        <div class="outside"><img src="img/out004.png" alt=""></div>
+                        <div class="outside"><img src="img/out005.png" alt=""></div>
+                    </div>
+                    <div class="outide_btn thumb">
                         <div><img src="img/out001.png" alt=""></div>
                         <div><img src="img/out002.png" alt=""></div>
                         <div><img src="img/out003.png" alt=""></div>
@@ -113,7 +109,8 @@
                 </div>
             </div>
         </div>
-     
+        <span class="left"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
+        <span class="right"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
     </article>
     <article class="box3">
         <div class="box3-1">
@@ -133,7 +130,14 @@
         </div>
        
     </article>
+    <!-- 화살표를 눌렸을때 이미지가 각각 보이면서 설명문이 보여야하는데 css에서 꼬였습니다. 
+        css에서 뭘 적용해서 꼬였는지 작성했습니다. css 'activ설정 체험활동' 확인해주시면 됩니다.
+        >> 추가적으로 box7의 대한 html 구조 확인해주시면 감사하겠습니다. 
+    -->
     <article class="box4">
+        <div class="bg002">
+            <img src="img/bg002-1.png" alt="">
+        </div>
         <div class="box4-1">
             <div class="title">
                 <h2>상설체험활동</h2>
@@ -142,54 +146,44 @@
         <div class="box4-2">
             <div class="activ_img">
                 <ul>
-                    <li class="enter"><img src="img/activ001.png" alt=""><div class="square"></div></li>
-                    <li><img src="img/activ002.png" alt=""><div class="square"></div></li>
-                    <li><img src="img/activ003.png" alt=""><div class="square"></div></li>
-                    <li><img src="img/activ004.png" alt=""><div class="square"></div></li>
-                    <li><img src="img/activ005.png" alt=""><div class="square"></div></li>
-                    <li><img src="img/activ006.png" alt=""><div class="square"></div></li>
+                    <li><img class="on" src="img/activ001.png" alt=""></li>
+                    <li><img src="img/activ002.png" alt=""></li>
+                    <li><img src="img/activ003.png" alt=""></li>
+                    <li><img src="img/activ004.png" alt=""></li>
+                    <li><img src="img/activ005.png" alt=""></li>
+                    <li><img src="img/activ006.png" alt=""></li>
                 </ul>
             </div>
-        </div>
-        <div class="box4-3">
-            <div class="activ_list">
-                <ul>
-                    <li><em>디오라마 해설</em></li>
-                    <li>모가형 증기기관차부터 KTX산천 모형까지 철도모형의 운행을 재밌는 해설과 함께 감상할 수 있는 체험 입니다
-                        체험운영 : 평일 11:30/ 14:00 주말 11:30/ 13:30/ 15:30
-                    </li>
-                </ul>
-                <ul>
-                    <li><em>스탬프 투어</em></li>
-                    <li>매표소 앞에 비치된 스탬프 용지에 실린 사진의 기차를 찾아서 색색의 도장을 쾅쾅 찍어 열차내부안을 감상할 수 있는 체험입니다.</li>
-                </ul>
-                <ul>
-                    <li><em>철도해설사 해설</em></li>
-                    <li>어디에서도 들을 수 없는 전문 철도해설사님과 함께 철도박물관 해설~증기기관차 증기시연부터 생생한 철도이야기를 들을 수 있는 체험입니다.
-                        체험운영 : 평일 11:40/ 14:10  주말 11:40/ 12:40/ 13:40/ 14:40
-                    </li>
-                </ul>
-                <ul>
-                    <li><em>철도직원 제복 체험 </em></li>
-                    <li>실내전시관 1층 증기기관차 모형 앞에서  철도직원 모자와 제복을 입고 사진을 찍을수 있는 체험입니다. </li>
-                </ul>
-                <ul>
-                    <li><em>열차운전 체험</em></li>
-                    <li>실내전시관 1층 운전체험실에서 어린이들의 기차를 운전해볼 수 있는 체험실입니다.
-                        체험시간은 3분으로 500원 동전이 필요하니, 1000원권 필수로 지참하셔야 동전교환기에서 교환가능합니다.
-                    </li>
-                </ul>
-                <ul>
-                    <li><em>디오라마 해설</em></li>
-                    <li>모가형 증기기관차부터 KTX산천 모형까지 철도모형의 운행을 재밌는 해설과 함께 감상할 수 있는 체험 입니다</li>
-                </ul>
-                <ul>
-                    <li><em>열차vr 체험실</em></li>
-                    <li>철도 관련 도서를 읽어볼 수 있고 기차 VR체험을 통해 KTX, 대통령전용열차,대통령과 주한유엔사령관 전용객차를 탄 것을 경험할 수 있는 체험입니다.</li>
-                </ul>
-            </div>
-        </div>
         
+            <span class="left"><i class="fa fa-caret-left" aria-hidden="true"></i></span>
+            <span class="right"><i class="fa fa-caret-right" aria-hidden="true"></i></span>
+
+            <div class="activ_list">
+                    <div class="on">
+                        <span>디오라마 해설</span><p>모가형 증기기관차부터 KTX산천 모형까지 철도모형의 운행을 재밌는 해설과 함께 감상할 수 있는 체험 입니다<br>체험운영 : 평일 11:30/ 14:00 주말 11:30/ 13:30/ 15:30</p>
+                    </div>
+                    <div>
+                        <span>스탬프 투어</span><p>매표소 앞에 비치된 스탬프 용지에 실린 사진의 기차를 찾아서 색색의 도장을 쾅쾅 찍어 열차내부안을 감상할 수 있는 체험입니다.</p>
+                    </div>
+                    <div>
+                        <span>철도해설사 해설</span><p>어디에서도 들을 수 없는 전문 철도해설사님과 함께 증기기관차 증기시연부터 생생한 철도이야기를 들을 수 있는 체험입니다.<br>체험운영 : 평일 11:40/ 14:10  주말 11:40/ 12:40/ 13:40/ 14:40</p>
+                    </div>
+                    <div>
+                        <span>철도직원 제복 체험 </span><p>실내전시관 1층 증기기관차 모형 앞에서  철도직원 모자와 제복을 입고 사진을 찍을수 있는 체험입니다. </p>
+                    </div>
+                    <div>
+                        <span>열차운전 체험</span><p>실내전시관 1층 운전체험실에서 어린이들의 기차를 운전해볼 수 있는 체험실입니다.<br>체험시간은 3분으로 500원 동전이 필요하니, 1000원권 필수로 지참하셔야 동전교환기에서 교환가능합니다.
+                    </p>
+                    </div>
+                    <div>
+                        <span>디오라마 해설</span><p>모가형 증기기관차부터 KTX산천 모형까지 철도모형의 운행을 재밌는 해설과 함께 감상할 수 있는 체험 입니다</p>
+                    </div>
+                    <div>
+                        <span>열차vr 체험실</span><p>철도 관련 도서를 읽어볼 수 있고 기차 VR체험을 통해 KTX, 대통령전용열차,대통령과 주한유엔사령관 전용객차를 탄 것을 경험할 수 있는 체험입니다.</p>
+                    </div>
+            </div>
+
+        </div>
     </article>
     <article class="box5">
         <div class="box5-1">
@@ -198,38 +192,35 @@
             </div>
         </div>
         <div class="box5-2">
-            <div class="box5-2-1">
-                <div class="event_top">
-                    <div class="poster">
-                        <a href="#"><img src="img/poster001.png" alt=""></a>
-                    </div>
-                    <div class="poster_list">
-                        <h4>프로그램명 커피로 그린 철도</h4>
-                        <ul>
-                            <li>전시기간 : 2023. 04. 21(금) ~ 2023. 06. 30(금)</li>
-                            <li>전시장소 : 실내전시관 2층 특별전시</li>
-                            <li>전시내용 : 철도와 역사, 철도와 사람, 풍경테마49점</li>
-                            <li>전시체험 : 매주 토,일 전시해설 및 커피그림 체험</li>
-                            <li>(10:20/12:00/14:00/15:50) 6세 이상, 각 선착순 18명</li>
-                        </ul>
-                    </div>
+            <div class="event_top">
+                <div class="poster">
+                    <a href="#"><img src="img/poster001.png" alt=""></a>
+                </div>
+                <div class="poster_list">
+                    <h4><em>프로그램명</em> 커피로 그린 철도</h4>
+                    <ul>
+                        <li><b>전시기간 :</b> 2023. 04. 21(금) ~ 2023. 06. 30(금)</li>
+                        <li><b>전시장소 :</b> 실내전시관 2층 특별전시</li>
+                        <li><b>전시내용 :</b> 철도와 역사, 철도와 사람, 풍경테마49점</li>
+                        <li><b>전시체험 :</b> 매주 토,일 전시해설 및 커피그림 체험</li>
+                    </ul>
+                    <p class="more_txt">(10:20/12:00/14:00/15:50) 6세 이상, 각 선착순 18명</p>
                 </div>
             </div>
-            <div class="box5-2-2">
-                <div class="event_bottom">
-                    <div class="poster">
-                        <a href="#"><img src="img/poster002.png" alt=""></a>
-                    </div>
-                    <div class="poster_list">
-                        <h4>프로그램명 어린이 기차그리기 대회 온라인전시회</h4>
-                        <ul>
-                            <li>전시기간 : 2022. 12. 1(목) ~ 2023. 11. 30(목)</li>
-                            <li>전시장소 : 메뉴 > 온라인자료 > 온라인 활동전시</li>
-                            <li>전시내용 : 어린이기차그리기 대회 수상작 중 40점</li>
-                        </ul>
-                    </div>
+            <div class="event_bottom">
+                <div class="poster_list">
+                    <h4><em>프로그램명</em> 어린이 기차그리기 대회 온라인전시회</h4>
+                    <ul>
+                        <li><b>전시기간 :</b> 2022. 12. 1(목) ~ 2023. 11. 30(목)</li>
+                        <li><b>전시장소 :</b> 메뉴 > 온라인자료 > 온라인 활동전시</li>
+                        <li><b>전시내용 :</b> 어린이기차그리기 대회 수상작 중 40점</li>
+                    </ul>
+                </div>
+                <div class="poster">
+                    <a href="#"><img src="img/poster002.png" alt=""></a>
                 </div>
             </div>
+
         </div>
     </article>
     <article class="box6">
@@ -247,7 +238,7 @@
                 <div class="qna_content">
                     A : 첫번째 루프식 선로는 현재 우리나라에서는 2개소(함백선과 영동선)에서 사용하고 있습니다.지난 2020년 말~2021년 초 중앙선 철도를 대대적으로 개량하기 이전에는 중앙선에도 치악산과 소백산 죽령 근처에 루프식 터널이 있어서루프식 선로를 사용하는 구간이 전국에 네 군데 있었지만, 지금은 두 곳 남았습니다.<br>
 두번째 스위치백 선로는 우리나라에서는 과거 영동선 통리~흥전~나한정~도계 구간에 있던 스위치백이 유일한 사례였지만2012년 6월 27일에 스위치백 대신 루프식 터널을 개통하여 더는 쓰지 않고, 옛 스위치백 구간의 일부는 민간에서 매입하여 레저시설로 쓰고 있습니다...
-                    <br><a href="#">더 보기</a>
+                    <a href="#">더 보기</a>
                 </div>
                 <div class="qna_title">
                     Q : 증기기관차의 미카형, 파시형의 특징과 차이를 알고싶어요.
@@ -257,7 +248,7 @@
                     A : 우선 파시는 "퍼시픽(Pacific, 태평양)", 미카는 "미카도(Micado, 황제)"의 일본식 명칭입니다.
 그리고 두 차량의 차이점은 파시는 1922년 경에 도입된 여객급행열차용 이었고, 서울~부산간 운행을 했습니다.
 미카는 1919년 경에 화물열차용으로 도입된 차량으로, 부산~신의주간 운행을 한 열차였습니다...
-                    <br><a href="#">더 보기</a>
+                    <a href="#">더 보기</a>
                 </div>
                 <div class="qna_title">
                     Q : 철도 건널목 안전한 통행 방법 무엇인가요?
@@ -268,12 +259,16 @@
                     - 일단 정지선에 정차하여 좌, 우 열차 접근 여부를 육안으로 확인한다.<br>
                     - 경보장치 동작 여부를 확인한다.<br>
                     - 꼬리 물기를 절대 하지 않는다...
-                    <br><a href="#">더 보기</a>
+                    <a href="#">더 보기</a>
 
                 </div>
             </div>
         </div>
     </article>
+    <!-- 비디오 재생 버튼을 누를시 메인화면에 크게 나타나서 플레이재생할수 있게 하는방법이 html 구조가 헷갈립니다.
+        썸네일 이미지가 필요로하는 부분일까요?
+        ul로 묶어줘야하는지 아니면 div 로 묵어줘야하는지 잘 모르겠습니다.
+    -->
     <article class="box7">
         <div class="box7-1">
             <div class="title">
@@ -281,26 +276,28 @@
             </div>
         </div>
         <div class="box7-2">
-            <div class="train_viedo_main">
-                <iframe width="731" height="397" src="https://www.youtube.com/embed/ywleZyLNpTc" title="[내 손안의 철도박물관]  기차 속이 궁금해, 미카3형 증기기관차 161호" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="train_big">
+                <ul class="thumb001">
+                    <li><iframe width="731" height="397" src="https://www.youtube.com/embed/ywleZyLNpTc" title="[내 손안의 철도박물관]  기차 속이 궁금해, 미카3형 증기기관차 161호" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                    <li><iframe width="731" height="397" src="https://www.youtube.com/embed/TfQXm8faChI" title="[내 손안의 철도박물관]  기차 속이 궁금해,  KTX-이음 목업" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                </ul>
+                <div class="train_viedo_main">
+                    <iframe width="731" height="397" src="https://www.youtube.com/embed/ywleZyLNpTc" title="[내 손안의 철도박물관]  기차 속이 궁금해, 미카3형 증기기관차 161호" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <ul>
+                    <li><iframe width="731" height="397" src="https://www.youtube.com/embed/KmNMZNxcucA" title="[내 손안의 철도박물관]  기차 속이 궁금해,  대통령 특별동차" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                    <li><iframe width="731" height="397" src="https://www.youtube.com/embed/B-x1PnzYmUo" title="[내 손안의 철도박물관]  기차 속이 궁금해, 통일호 객차 13101호" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+                </ul>
             </div>
-            <div class="train_viedo_btn">
-                <iframe width="731" height="397" src="https://www.youtube.com/embed/ywleZyLNpTc" title="[내 손안의 철도박물관]  기차 속이 궁금해, 미카3형 증기기관차 161호" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="731" height="397" src="https://www.youtube.com/embed/TfQXm8faChI" title="[내 손안의 철도박물관]  기차 속이 궁금해,  KTX-이음 목업" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="731" height="397" src="https://www.youtube.com/embed/KmNMZNxcucA" title="[내 손안의 철도박물관]  기차 속이 궁금해,  대통령 특별동차" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="731" height="397" src="https://www.youtube.com/embed/B-x1PnzYmUo" title="[내 손안의 철도박물관]  기차 속이 궁금해, 통일호 객차 13101호" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="viedo_info">
+                <ul>
+                    <li class="on">기차속이 궁금해1탄</li>
+                    <li>기차속이 궁금해2탄</li>
+                    <li>기차속이 궁금해3탄</li>
+                    <li>기차속이 궁금해4탄</li>
+                </ul>
             </div>
         </div>
-    <div class="box7-3">
-        <div class="viedo_info">
-            <ul>
-                <li>기차속이 궁금해1탄</li>
-                <li>기차속이 궁금해2탄</li>
-                <li>기차속이 궁금해3탄</li>
-                <li>기차속이 궁금해4탄</li>
-            </ul>
-        </div>
-    </div>
     </article>
     <article class="box8">
         <div class="box8-1">
@@ -314,17 +311,18 @@
                 <div class="car">
                     <i class="fa fa-car" aria-hidden="true"></i><span>자가용</span>
                     <p>영동고속도로 부곡 IC 진출 → 좌측 출구  → 의왕역 → 철도박물관</p>
+                    <p class=""><i class="fa fa-star" aria-hidden="true"></i>관람객은 박물관 앞 <em>주차장을 무료로 이용</em></p>
                 </div>
                 <div class="bus">
                     <i class="fa fa-bus" aria-hidden="true"></i><span>대중교통-버스</span>
-                    <p>의왕역 2번출구 앞에서 1-1, 1-5, 5번 버스 승차
+                    <p>의왕역 2번출구 앞에서 1-1, 1-5, 5번 버스 승차<br>
                         한국교통대학교 앞에서 하차, 도보 약 3분</p>
                 </div>
             </div>
         </div>
         <div class="box8-3">
             <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.1984255561892!2d126.94871617646974!3d37.31412723856057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5d448395b8fd%3A0xca5bd0c7fb1acd7a!2z7LKg64-E67CV66y86rSA!5e0!3m2!1sko!2skr!4v1684109707739!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.1984255561892!2d126.94871617646974!3d37.31412723856057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b5d448395b8fd%3A0xca5bd0c7fb1acd7a!2z7LKg64-E67CV66y86rSA!5e0!3m2!1sko!2skr!4v1684109707739!5m2!1sko!2skr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         </div>  
     </article>
@@ -335,8 +333,8 @@
             <h1 class="sub_logo">서브로고</h1>
         </div>
         <div class="Copyright">
-            한국철도공사     사업자등록번호 : 314-82-10024     본사 : 대전광역시 동구 중앙로 240
-        철도박물관 : 경기도 의왕시 철도박물관로 142      Tel : 031-461-3610     Fax : 031-460-4322
+            한국철도공사     사업자등록번호 : 314-82-10024     본사 : 대전광역시 동구 중앙로 240<br>
+        철도박물관 : 경기도 의왕시 철도박물관로 142      Tel : 031-461-3610     Fax : 031-460-4322<br>
         Copyright &copy;
         </div>
         <div class="sns">
@@ -344,7 +342,8 @@
                 <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                 <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
             </ul>
-        </div><div class="site_list">
+        </div>
+        <div class="site_list">
             <select name="" id="">
                 <option value="">관련사이트</option>
                 <option value="">코레일홈페이지</option>
@@ -365,7 +364,7 @@
                 // qna타이틀을 눌렸을때 이거이거이거 보여줘 .... 
                 // 다시 올려?..올...려.. slidup? 근데 하나만 보여줘야해? 어라?
                 $('.blink .qna_title').click(function(){
-                    $(this).next().show()
+                    $(this).next().slideToggle()
                 })
 
 })

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신나리님2차피드백
+        
+    </title>
+
+    <style>
+        * {margin: 0; 
+        padding: 0;}
+        ul {list-style: none;}
+
+
+        /* 슬라이드부분 */
+        .boxA {background-color: aquamarine;
+        width: 100%;
+    height: 400px;
+margin-top: 50px;
+position: relative;}
+
+
+
+
+
+        .boxA .list { width: 1580px;
+        height: 300px;border: 1px solid #000;
+    margin-left: auto;
+margin-right: auto;
+position: relative;
+overflow: hidden;}
+        .boxA .list ul {
+            display: flex;
+           width:2560px;
+           
+            flex-wrap: wrap;
+        }
+        .boxA .list li {width: 300px;
+                        height: 300px;
+                        margin-right: 20px;
+                    background-color: yellowgreen;}
+
+
+                    /* 왼쪽오른쪽 화살표정렬 */
+
+                    .boxA>span {position: absolute;
+                    top:50%;
+                width: 50px;
+            height: 50px;
+        border: 1px solid #000;
+    display: flex;
+align-items: center;
+justify-content: center;}
+                    .boxA .left {left: 20px;
+                                }
+                    .boxA .right {right: 20px;}
+                    
+                    .boxA  .txtBox {position: relative;
+        margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    margin-left: auto;
+margin-right: auto;
+background-color: skyblue;}
+
+.boxA .txtBox div {width: 80%;
+            height: 100px;
+        border: 2px solid #000;
+    display: flex;
+    padding: 20px;
+    position: absolute;
+    left: 10%;
+    top: 0;
+    box-sizing: border-box;
+    align-items: center;
+    
+}
+.boxA .txtBox span {
+           width: 20%;
+       }
+       .boxA  .txtBox p {}
+
+
+        /* 동영상영상배치설정 */
+
+
+        .boxB {display: flex;
+                background-color: aquamarine;
+            margin-top: 50px;
+        justify-content: space-between;}
+        .boxB ul {width: 20%;background-color: blue;
+                display: flex;
+            flex-direction: column;
+        justify-content: center;
+    align-items: center;}
+        .boxB>div {width: 55%; background-color: red;}
+        .boxB li {width: 200px;
+        height: 200px;
+    background-color: aliceblue;
+margin: 10px 0;}
+
+/* 사진과 이미지 좌우설정및 백그라운드 설정 */
+.boxC {background-color: aquamarine;
+        margin-top: 50px;
+    padding: 20px;}
+        .boxC-inner {width: 70%;
+        background-color: antiquewhite;
+    margin: 10px auto;}
+    .boxC-inner>div {display: flex;
+    padding: 30px;
+justify-content: space-between;}
+        .boxC-1 {margin-bottom: 30px;}
+        .boxC-2 {}
+        .boxC .txtBox {width: 50%;}
+        .boxC .img {width: 200px;
+                            height: 300px;
+                            background-color: aliceblue;}
+                            .boxC h4 {width: 100%;
+                                    padding: 20px;
+                                background-color: skyblue;}
+                            .boxC ul {margin-top: 20px;
+                                padding: 20px;}
+                                .boxC li {padding: 10px;
+                                }
+
+    </style>
+</head>
+<body>
+
+  
+
+    <!-- 슬라이브 부분 -->
+
+    <div class="boxA">
+       
+        <div class="list"> 
+           
+            <ul>
+                <li>list1</li>
+                <li>list2</li>
+                <li>list3</li>
+                <li>list4</li>
+                <li>list5</li>
+                <li>list6</li>
+                <li>list7</li>
+                <li>list8</li>
+            </ul>
+        </div>
+
+        <span class="left">왼</span>
+        <span class="right">오</span>
+ <div class="txtBox">
+        <div><span>타이틀제목</span><p class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero tenetur quasi ex, rerum molestias repellendus eveniet qui quibusdam quia in repellat id recusandae accusamus illum nobis maiores! Maxime, perspiciatis! Exercitationem.</p></div>
+        <div><span>타이틀제목</span><p class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero tenetur quasi ex, rerum molestias repellendus eveniet qui quibusdam quia in repellat id recusandae accusamus illum nobis maiores! Maxime, perspiciatis! Exercitationem.</p></div>
+        <div><span>타이틀제목</span><p class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero tenetur quasi ex, rerum molestias repellendus eveniet qui quibusdam quia in repellat id recusandae accusamus illum nobis maiores! Maxime, perspiciatis! Exercitationem.</p></div>
+        <div><span>타이틀제목</span><p class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero tenetur quasi ex, rerum molestias repellendus eveniet qui quibusdam quia in repellat id recusandae accusamus illum nobis maiores! Maxime, perspiciatis! Exercitationem.</p></div>
+        <div><span>타이틀제목</span><p class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero tenetur quasi ex, rerum molestias repellendus eveniet qui quibusdam quia in repellat id recusandae accusamus illum nobis maiores! Maxime, perspiciatis! Exercitationem.</p></div>
+        <div><span>타이틀제목</span><p class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero tenetur quasi ex, rerum molestias repellendus eveniet qui quibusdam quia in repellat id recusandae accusamus illum nobis maiores! Maxime, perspiciatis! Exercitationem.</p></div>
+        <div><span>타이틀제목</span><p class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero tenetur quasi ex, rerum molestias repellendus eveniet qui quibusdam quia in repellat id recusandae accusamus illum nobis maiores! Maxime, perspiciatis! Exercitationem.</p></div>
+        <div><span>타이틀제목</span><p class="txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero tenetur quasi ex, rerum molestias repellendus eveniet qui quibusdam quia in repellat id recusandae accusamus illum nobis maiores! Maxime, perspiciatis! Exercitationem.</p></div>
+        </div>
+
+    </div>
+   
+
+
+        <!-- 비디오영상배치 -->
+
+        <div class="boxB">
+            <ul class="thumb001">
+                <li>동영상작은박스001</li>
+                <li>동영상작은박스002</li>
+                
+            </ul>
+            <div class="big">동영상큰박스</div>
+
+            <ul class="thumb002">
+                <li>동영상작은박스003</li>
+                <li>동영상작은박스004</li>
+            </ul>
+
+        </div>
+
+        <div class="boxC">
+
+       <div class="boxC-inner">
+           <div class="boxC-1">
+            <div class="img">이미지</div>
+            <div class="txtBox">
+                <h4>타이틀</h4>
+                <ul>
+                    <li>정보: 해당내용</li>
+                    <li>정보: 해당내용</li>
+                    <li>정보: 해당내용</li>
+                    <li>정보: 해당내용</li>
+                </ul>
+                <p class="moreTxt">추가적인내용</p>
+           
+            </div>
+           
+           </div>
+           <div class="boxC-2">
+           
+            <div class="txtBox">
+                <h4>타이틀</h4>
+                <ul>
+                    <li>정보: 해당내용</li>
+                    <li>정보: 해당내용</li>
+                    <li>정보: 해당내용</li>
+                    <li>정보: 해당내용</li>
+                </ul>
+                <p class="moreTxt">추가적인내용</p>
+           
+            </div>
+            <div class="img">이미지</div>
+           
+           </div>
+       </div>
+
+        </div>
+
+
+    </body>
+
+    <style>
+      
+    
+    
+    
+    </style>
+</html>
