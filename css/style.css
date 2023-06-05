@@ -1,0 +1,714 @@
+@charset 'utf-8';
+
+* {margin: 0;
+    padding: 0;}
+ul, ol {list-style: none;}
+a {text-decoration: none;
+color: #4C4A4A;}
+img {border: none;
+    vertical-align: bottom;}
+body {
+    font-family: 'inter';
+    color: #4C4A4A;
+}
+
+/* 로고설정 */
+
+header {
+    width: 100%;
+    background-image: url(../img/hero.png);
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+.boxA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+}
+
+.logo {
+    
+    width: 400px;
+    height: 180px;
+    background-image: url(../img/logo.png);
+    text-indent: -9999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* 메뉴설정 */
+
+.gnb {}
+.gnb ul {
+    display: flex;
+    justify-content: center;
+    background-color: #2F4072;
+}
+.gnb ul li {
+
+}
+.gnb ul li a {
+    display: block;
+    width: 200px;
+    padding: 20px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.gnb ul li a:hover {background-color: #5C82EE;}
+
+
+/* hero 설정 */
+
+
+/* open설정 (하단개관일정보) */
+.boxD {position: absolute;
+        bottom: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.open {
+    width: 100%;
+    height: 100px;
+    border-top: 3px solid #D9D9D9;
+    border-bottom: 3px solid #D9D9D9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.today p {
+    color: #08277E;
+    font-size: 20px;
+    text-align: center;
+}
+
+.today b {
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+}
+
+.today span { color: #5C82EE;}
+
+
+
+/*  */
+.open .time {}
+
+.open .time p {
+    font-size: 18px;
+    color: #4C4A4A;
+}
+
+.open .time b {
+    color: #08277E;
+}
+.open .group a{
+    width: 280px;
+    background-color: #F7D40F;
+    padding: 25px 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* info 설정 소개문구 */
+
+.box1 {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../img/bg001.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.box1-1 {
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.info {
+    width: 680px;
+    height: 210px;
+    border-bottom: 5px solid #F7D40F;
+    border-right: 5px solid #F7D40F;
+    border-top: 5px solid #5C82EE;
+    border-left: 5px solid #5C82EE;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info p {
+    font-size: 18px;
+    color: #08277E;
+    text-align: center;
+}
+
+.info p em {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    color: #071F64;
+}
+
+/* 내부,외부 이미지 설정 */
+
+.box2 {
+    background: #5C82EE;
+    width: 1000px;
+    margin: 50px auto;
+    position: relative;
+   
+}
+.box2-1 {background-color: red;}
+.box2-2 {background-color: yellow;
+height: 610px;}
+
+
+
+/* 타이틀구간 */
+.box2-1 .tab {}
+.box2-1 .tab ul {display: flex;}
+.box2-1 .tab li {padding: 20px;
+                background-color:#F7D40F ;
+            font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+.box2-1 .tab li.on {background-color:#3957AE ;}
+
+.main_art>div {width: 1000px;
+                height: 610px;
+            position: absolute;}
+.main_art>div .big {width: 1000px;
+    height: 500px;
+margin-bottom: 10px;
+position: relative;
+overflow: hidden;}
+.main_art>div .thumb {width: 1000px;
+                height: 100px;}
+                .main_art>div img {max-width: 100%;}
+
+ .main_art>div .big>div {position: absolute;}
+
+ .main_art>div .thumb{display: flex;}
+ .main_art>div .thumb>div {width: 180px;
+                            margin-right: 20px;
+                        height: 100px;
+                    overflow: hidden;}
+.box2 span {position: absolute;
+    top: 50%;
+font-size: 60px;
+color: #1877f2;
+}
+.left {left: -50px;}
+.right{right: -50px;}
+
+
+
+
+
+/* notice 설정 공지사항 */
+
+.box3 {
+    background-color: #EFF3FF;
+    width: 100%;
+    height: 55vh;
+}
+
+.notice {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+
+}
+.notice ul {
+    background-color: #fff;
+    width: 1100px;
+}
+.notice li {
+}
+.notice li:hover{background-color: #EFF3FF;}
+.notice li a {
+    display: block;
+    font-size: 20px;    
+    padding: 15px 0;
+}
+.notice li a span {
+    display: inline-block;
+    padding: 3px 10px;
+    margin: 0 20px;
+}
+.notice li:nth-child(1) a span {background-color: #5C82EE;
+                                color: #fff;}
+.notice li:nth-child(2) a span {background-color: #5C82EE;
+                                color: #fff;}
+.notice li:nth-child(3) a span {background-color: #F7D40F;
+                                color: #473D06;}
+.notice li:nth-child(4) a span {background-color: #F7D40F;
+                                color: #473D06;}
+
+.notice li a em {
+    font-style: normal;
+    float: right;
+    padding-right: 20px;
+}
+
+/* activ설정 체험활동 */
+
+.box4-2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* list = activ_img */
+
+.activ_big {
+    
+}
+
+/* 화살표 포지션값을 주니깐 사라져요 
+.activ_img ul{
+    display: flex; 값을 줘서 정렬했는데요 
+    ul값 안보이게 하기위해서는 
+    display: none 해야하고 둘다 적어주니깐 둘중에 하나만 되요 
+    기차 이미지 z-index값을 주기위해 각 덩어리태그에 포지션 값을 주니깐 또 겹쳐져요 ... 
+}
+*/
+
+/* .box4 {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bg002 {
+    width: 100%;
+    position: absolute;
+    right: -850px;
+    top: -350px;
+}
+
+.bg002 img {
+    width: 70%;
+}
+
+.box4-2 {
+    background-color: #F7D40F;
+    width: 1000px;
+    margin: 0 auto;
+}
+.activ_img {
+    display: flex;
+    justify-content: center;
+}
+.activ_img ul{
+    display: flex;
+}
+.activ_img ul li {
+    margin-left: 20px;
+}
+.activ_img ul li img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    margin: 10px;
+}
+.activ_img ul li .square {
+    width: 140px;
+    height: 140px;
+    background-color: #EFF3FF;
+}
+
+
+.box4-3 {
+    width: 100%;
+    margin-top: 50px;
+}
+.activ_list {
+    background-color: #EFF3FF;
+    position: relative;
+}
+.activ_list ul{
+    display: flex;
+}
+
+.activ_list ul.on{}
+
+.activ_list {
+    font-size: 16px;
+    color: #071F64;
+    font-size: 16px;
+}
+
+.activ_list em {
+    font-style: normal;
+    color: #5C82EE;
+    font-size: 24px;
+    font-weight: bold;
+} 
+
+.box4 span {
+    font-size: 60px;
+    color: #1877f2;
+} */
+
+
+
+/* event 행사특별전시  */
+
+.box5 {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/bg003.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.box5-2 {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 50%;
+    margin-left: -35%;
+}
+
+
+
+.event_top, .event_bottom{
+    display: flex;
+    width: 100%;
+}
+
+
+/* 포스터 설정 */
+
+.event_top .poster, .event_bottom .poster{
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.event_top .poster img, .event_bottom .poster img {
+    width: 200px;
+    height: 290px;
+}
+
+.event_top .poster img a {
+    display: block;
+}
+
+.event_top .poster img:hover {
+    box-shadow: 5px 3px 20px rgba(0, 0, 0, 0.6);
+}
+.event_bottom .poster img:hover {
+    box-shadow: 5px 3px 20px rgba(0, 0, 0, 0.6);
+}
+
+.box5-2-1 {
+    padding-bottom: 20px;
+}
+
+
+
+/* 포스터 문구 */
+.poster_list {}
+
+.poster_list h4 {
+    width: 600px;
+    font-size: 20px;
+    background-color: #5C82EE;
+    color: #fff;
+    padding: 10px;
+    margin-top: 20px;
+}
+.poster_list em {
+    font-style: normal;
+    padding: 0 20px;
+}
+.poster_list ul{
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    margin-top: 7px;
+
+}
+.poster_list li {
+    font-size: 18px;
+    color: #5C82EE;
+    padding-bottom: 20px;
+}
+.poster_list b {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #071F64;
+}
+
+
+/* .box5-2-1 {
+    background-color: red;
+}
+.box5-2-2 {
+    background-color: yellow;
+} */
+
+
+
+
+
+/* 철도질의문답 */
+
+.box6 {
+    height: 100vh;
+    background-image: url(../img/bg004.png);
+    background-size: contain;
+}
+.box6-2 {
+    width: 950px;
+    margin: 0 auto;
+}
+
+
+.blink .qna_title {
+    background-color: #D9D9D9;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 90px;
+    margin-bottom: 7px;
+}
+.blink .qna_title i {
+    float: right;
+}
+.blink .qna_content {
+    background-color: #A9BCFF;
+    display: none;
+    padding-top: 30px;
+    padding-bottom: 60px;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-bottom: 7px;
+    position: relative;
+    color: #071F64;
+}
+
+
+.blink .qna_content a {
+    display: block;
+    width: 100px;
+    height: 30px;
+    background-color: #EBF57D;
+    border-radius: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 15px;
+    margin-right: 90px;
+    right: 0;
+}
+
+
+/* 온라인교육영상 */
+/* html에 궁금한부분 작성했습니다. */
+
+.box7 {
+    width: 100%;
+    height: 100vh;
+    background-color: #5C82EE;
+}
+
+.train_viedo_btn iframe {
+    width: 250px;
+    height: 135px;
+}
+
+/* 영상 제목문구*/
+
+.box7-3 {}
+.viedo_info {}
+.viedo_info ul{
+    background-color: #fff;
+}
+.viedo_info ul li {
+    font-size: 24px;
+    font-weight: bold;
+    color: #071F64;
+}
+
+/* map 오시는길 */
+
+.box8 {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+}
+.box8-2 {
+    float: left;
+    width: 50%;
+    padding-left: 100px;
+}
+.box8-2 {}
+.box8-2 .map_info {
+    font-size: 18px;
+}
+.box8-2 .map_info h4 {
+    color: #071F64;
+    font-size: 22px;
+}
+.box8-2 .car, .box8-2 .bus {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+.box8-2 .car i {
+    color: #071F64;
+    font-size: 45px;
+}
+.box8-2 .car p:last-child i{
+    font-size: 20px;
+    color: orange;
+    padding-right: 10px;
+}
+.box8-2 .car p:last-child {
+    color: #071F64;
+    font-size: 16px;
+    font-weight: bold;
+}
+.box8-2 .car em {
+    font-style: normal;
+    color: orange;
+}
+.box8-2 .car span, .box8-2 .bus span {
+    font-size: 22px;
+    margin-left: 10px;
+}
+.box8-2 .car p, .box8-2 .bus p{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.box8-2 .bus i{
+    color: #071F64;
+    font-size: 40px;
+}
+.box8-3 {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0;
+}
+.box8-3 .map{}
+.box8-3 .map iframe{
+    width: 100%;
+    height: 60vh;
+}
+
+/* footer */
+
+footer {
+    background-color: #D9D9D9;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer_info {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+    
+}
+.sub_logo {
+    width: 300px;
+    height: 180px;
+    background-image: url(../img/logo.png);
+    text-indent: -9999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.sns {
+}
+.sns ul {
+    display: flex;
+}
+.sns ul li {
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+.sns ul li:nth-child(1) a {
+    color: #ff0000;
+}
+.sns ul li:nth-child(2) a {
+    color: #1877f2;
+}
+
+.sns ul li {
+    font-size: 36px;
+}
+
+.site_list select{
+    height: 50px;
+}
+
+
+
+/* title정리 */
+
+.box3-1, .box4-1, .box5-1, .box6-1, .box7-1 , .box8-1 {
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title{
+    width: 250px;
+    height: 80px;
+    background-color: #5C82EE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 0 50px 0;
+}
+
+.title h2{
+    color: #fff;
+    font-size: 26px;
+}
+
+
