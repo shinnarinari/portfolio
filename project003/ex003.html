@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex003예제</title>
+</head>
+<style>
+    * {margin: 0;
+    padding: 0;}
+
+    body {
+        height: 3000px;
+    }
+
+
+    h1 {
+        position: fixed;
+        left: 50px;
+        top: 50px;
+        z-index: 999;
+    }
+
+    .box1 {
+        width: 100%;
+        height: 100vh;
+        background-color: antiquewhite;
+        font-size: 150px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-image: url(img/o-AUDREY-HEPBURN-facebook.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        /* 글씨를 투명하게 적용하여 배경을 넣는다vv */
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+    .box2 {
+        width: 100%;
+        height: 100vh;
+        border: 20px solid red;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+
+    }
+
+    .box2.fix {
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    .box2 p {
+        width: 2500px;
+        height: 500px;
+        background-color: violet;
+        position: absolute;
+        left: 200px;
+        top: 150px;
+    }
+</style>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+    $(document).ready(function(){
+
+$(window).scroll(function(){
+    let sc = $(this).scrollTop();
+    // vv소수점 나올시 작성
+    let sNum = Math.floor(sc)
+
+    let bht = $('.box1').height()
+    $('h1').text(bht);
+
+    // vv 10보다 작으면 크게 움직인다. 
+    let lsc =(sNum-bht)/10
+    $('h1').text((sNum-bht)/10)
+
+    if(sc>bht) {
+        $('.box2').addClass('fix')
+        $('.box2>p').css({'left':200-lsc})
+    }else {
+        $('.box2').removeClass('fix')
+    }
+
+})
+
+    })
+</script>
+<body>
+    <h1>00</h1>
+    <div class="box1">테스트박스</div>
+    <div class="box2">
+        <p></p>
+    </div>
+</body>
+</html>
